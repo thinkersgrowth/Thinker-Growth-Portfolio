@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0c0f">
+<meta name="description" content="Thinker Growth — Professional Video Editor. Deep Think. Grow Daily.">
+<title>Thinker Growth | Video Editing Portfolio</title>
+<style>
+:root{--bg:#0b0c0f;--panel:#121419;--panel2:#191c22;--silver:#c6cbd3;--silver2:#858d99;--white:#f7f8fa;--line:rgba(198,203,211,.19);--muted:#9ba2ad;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:-30%;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 18% 22%,rgba(172,183,199,.09),transparent 28%),radial-gradient(ellipse at 82% 52%,rgba(115,126,143,.08),transparent 30%),linear-gradient(125deg,#0b0c0f,#101217 48%,#090a0d);animation:ambient 18s ease-in-out infinite alternate}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.13;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+@keyframes ambient{from{transform:translate3d(-1%,0,0) rotate(0deg)}to{transform:translate3d(1%,1%,0) rotate(2deg)}}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(10,11,14,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.12em;font-size:13px}.mini-logo{width:36px;height:36px;border:1px solid #aeb5c0;border-radius:10px;display:grid;place-items:center;color:#e4e7eb;font-size:13px;font-weight:900;box-shadow:inset 0 0 18px #ffffff0b,0 0 20px #bfc6d20c}.navlinks{display:flex;align-items:center;gap:25px;color:#b5bbc4;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.navlinks a:hover{color:white}.nav-cta{padding:11px 16px;border:1px solid #777f8c;border-radius:30px;color:#f1f3f6!important}
+.hero{min-height:650px;display:grid;align-items:center;position:relative;padding:82px 0 78px}.hero:before{content:"";position:absolute;width:420px;height:420px;right:2%;top:10%;border-radius:50%;background:radial-gradient(circle,rgba(194,202,214,.12),transparent 68%);filter:blur(10px);animation:pulse 7s ease-in-out infinite alternate}
+@keyframes pulse{to{transform:scale(1.14);opacity:.5}}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px;position:relative}.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--silver2);display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";height:1px;width:28px;background:var(--silver2)}
+.hero h1{font-size:clamp(42px,6.1vw,82px);line-height:.99;letter-spacing:-.065em;margin:22px 0 18px;font-weight:750}.hero h1 span{display:block;color:transparent;-webkit-text-stroke:1px #c6cbd3;background:linear-gradient(110deg,#f7f8fa,#8b929d 50%,#e8ebef);background-clip:text;-webkit-background-clip:text}
+.hero-sub{font-size:14px;line-height:1.8;color:#b2b8c2;max-width:510px}.hero-sub strong{color:#f5f6f8;font-weight:600}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:5px;border:1px solid var(--line);font-size:12px;letter-spacing:.08em;text-transform:uppercase;transition:.25s}.btn.primary{background:linear-gradient(120deg,#e2e5e9,#aeb5bf);color:#101115;border-color:#e2e5e9;font-weight:750}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 35px #cbd2dc16}.hero-mark{display:flex;justify-content:center;align-items:center;min-height:340px;position:relative;animation:markIn 1.3s cubic-bezier(.2,.7,.2,1) both}
+@keyframes markIn{0%{opacity:0;transform:scale(.78) rotate(-8deg);filter:blur(12px)}65%{opacity:1;filter:blur(0)}100%{transform:scale(1) rotate(0)}}
+.logo-orbit{width:min(330px,75vw);aspect-ratio:1;border-radius:50%;border:1px solid #aeb5c022;display:grid;place-items:center;position:relative;box-shadow:0 0 90px #c2cad20b,inset 0 0 70px #c2cad208}
+.logo-orbit:before,.logo-orbit:after{content:"";position:absolute;border:1px solid #c6cbd31b;border-radius:50%;inset:17px;animation:spin 30s linear infinite}.logo-orbit:after{inset:-16px;border-style:dashed;animation:spin 55s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.logo-big{width:64%;aspect-ratio:1;border:1px solid #c7ccd4;border-radius:25%;display:grid;place-items:center;font-weight:900;font-size:clamp(45px,7vw,76px);letter-spacing:-.12em;color:#e4e7eb;background:linear-gradient(145deg,#252a32,#0d0f13 65%);box-shadow:inset 0 0 45px #dfe5ef0b,0 0 60px #c6cbd30d;position:relative}
+.logo-big:after{content:"";position:absolute;inset:-7px;border:1px solid #d5dbe522;border-radius:26%;transform:rotate(8deg)}
+.orbit-label{position:absolute;bottom:3%;font-size:9px;letter-spacing:.28em;color:#818995;text-transform:uppercase}
+.intro-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(90deg,#ffffff03,#c5ccd40a,#ffffff03);padding:22px 0}.introin{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.introin p{margin:0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c1c6ce}.introin p strong{color:#fff}.introin .motto{color:#929aa6;font-size:11px;letter-spacing:.08em}
+.section{padding:90px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}.kicker{font-size:10px;letter-spacing:.23em;color:#929aa6;text-transform:uppercase}.section h2{font-size:clamp(29px,4vw,46px);letter-spacing:-.045em;margin:10px 0 0}.section-desc{font-size:13px;line-height:1.7;color:#8f97a3;max-width:430px;margin:0}
+.category{padding:31px 0;border-top:1px solid var(--line)}.cat-head{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:18px}.cat-title{display:flex;align-items:baseline;gap:12px}.cat-title h3{margin:0;font-size:18px;letter-spacing:-.02em;font-weight:650}.cat-num{font-size:10px;color:#838b97;letter-spacing:.13em}.cat-meta{font-size:10px;color:#7e8692;letter-spacing:.12em;text-transform:uppercase}
+.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.video-grid.single{grid-template-columns:minmax(0,1fr)}.video-grid.single .video-card{max-width:760px}.video-card{min-width:0;position:relative;border:1px solid #c2cad214;background:#101216;border-radius:8px;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}.video-card:hover{transform:translateY(-5px);border-color:#c6cbd36b;box-shadow:0 18px 45px #0007,0 0 25px #c6cbd30b}
+.media{position:relative;background:linear-gradient(145deg,#20242c,#0e1014);overflow:hidden;isolation:isolate}.ratio-916{aspect-ratio:9/16}.ratio-169{aspect-ratio:16/9}.media iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:20px;background:radial-gradient(ellipse at 50% 35%,#aeb8c314,transparent 55%),linear-gradient(145deg,#20242c,#0e1014)}
+.play{width:48px;height:48px;border:1px solid #d1d6df8a;border-radius:50%;display:grid;place-items:center;color:#e5e8ed;background:#ffffff08;transition:.25s}.video-card:hover .play{background:#d7dce4;color:#101216;transform:scale(1.08)}.play svg{margin-left:3px}.placeholder b{font-size:10px;letter-spacing:.18em;color:#cbd0d8}.placeholder small{font-size:9px;letter-spacing:.1em;color:#818a97}.card-info{padding:13px 15px;display:flex;justify-content:space-between;align-items:center;gap:12px}.card-info strong{font-size:12px;font-weight:600;color:#dfe2e7}.card-info span{font-size:9px;letter-spacing:.12em;color:#838b97;text-transform:uppercase}
+.cat-controls{display:flex;align-items:center;gap:8px}.arrow{width:31px;height:31px;border:1px solid #777f8b66;border-radius:50%;background:#ffffff04;color:#dce0e6;display:grid;place-items:center;cursor:pointer;transition:.2s}.arrow:hover{background:#c6cbd3;color:#101216}.arrow:disabled{opacity:.25;cursor:not-allowed}.dots{display:flex;gap:5px}.dot{width:5px;height:5px;border-radius:50%;background:#555d68}.dot.active{background:#e1e5eb}
+.doc-layout{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center}.doc-layout .video-grid{grid-template-columns:1fr}.doc-layout .video-card{max-width:850px}.doc-side{display:flex;flex-direction:column;gap:8px}.doc-side .arrow{width:36px;height:36px}
+.contact{padding:72px 0 82px;border-top:1px solid var(--line);background:radial-gradient(ellipse at 50% 100%,#aeb8c30c,transparent 55%)}.contact-box{border:1px solid #c6cbd32b;border-radius:10px;padding:clamp(25px,5vw,55px);background:linear-gradient(130deg,#ffffff06,#ffffff01);display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}.contact h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.05em;margin:12px 0}.contact p{font-size:13px;color:#a1a8b2;line-height:1.7;max-width:500px}.contact-links{display:grid;gap:12px}.contact-link{display:flex;align-items:center;gap:12px;padding:15px;border:1px solid var(--line);border-radius:6px;color:#dfe3e9;font-size:12px;transition:.2s;overflow-wrap:anywhere}.contact-link:hover{border-color:#c6cbd37a;background:#ffffff06}.contact-link .ico{width:30px;height:30px;border:1px solid #c6cbd333;border-radius:50%;display:grid;place-items:center;color:#c6cbd3;flex-shrink:0}
+footer{border-top:1px solid #ffffff0c;padding:22px 0;color:#727a86;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.footerin{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr;gap:22px}.hero{padding:65px 0 55px;min-height:auto}.hero-copy{order:2}.hero-mark{order:1;min-height:250px}.logo-orbit{width:220px}.hero h1{font-size:clamp(42px,10vw,68px)}.navlinks{gap:13px}.navlinks a:not(.nav-cta){display:none}.contact-box{grid-template-columns:1fr}.section{padding:65px 0}.doc-layout{grid-template-columns:1fr}.doc-side{flex-direction:row;justify-content:flex-end}.doc-layout .video-card{max-width:none}}
+@media(max-width:520px){.wrap{width:calc(100% - 30px)}.navin{height:65px}.brand{font-size:11px;letter-spacing:.08em}.nav-cta{padding:9px 12px;font-size:10px}.hero-mark{min-height:220px}.logo-orbit{width:190px}.introin{align-items:flex-start;flex-direction:column;gap:8px}.section-head{align-items:flex-start;flex-direction:column}.video-grid{gap:10px}.card-info{padding:10px;align-items:flex-start;flex-direction:column;gap:5px}.cat-title h3{font-size:16px}.cat-head{align-items:flex-start}.cat-meta{font-size:9px}.video-grid.single .card-info{flex-direction:row;align-items:center}.contact-link{font-size:11px}.section{padding:52px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#home" aria-label="Thinker Growth home"><span class="mini-logo">TG</span><span>THINKER GROWTH</span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#work">Portfolio</a><a href="#about">About</a><a href="#contact" class="nav-cta">Let's Talk ↗</a>
+    </nav>
+  </div>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Creative Editing Portfolio</div>
+      <h1>THINKER <span>GROWTH.</span></h1>
+      <p class="hero-sub"><strong>Professional Video Editor</strong><br>Welcome to Thinker Growth. Deep Think. Grow Daily.<br>We don’t compromise on quality.</p>
+      <div class="hero-actions"><a class="btn primary" href="#work">Explore My Work <span>↓</span></a><a class="btn" href="#contact">Contact Me ↗</a></div>
+    </div>
+    <div class="hero-mark" aria-label="Thinker Growth TG logo">
+      <div class="logo-orbit"><div class="logo-big">TG</div><div class="orbit-label">Think • Create • Grow</div></div>
+    </div>
+  </div>
+</section>
+<div class="intro-strip" id="about"><div class="wrap introin"><p><strong>THINKER GROWTH</strong> &nbsp; / &nbsp; PROFESSIONAL VIDEO EDITOR</p><p class="motto">DEEP THINK. GROW DAILY. &nbsp; — &nbsp; QUALITY WITHOUT COMPROMISE.</p></div></div>
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">The Work</div><h2>Selected Projects<span style="color:#8e96a2">.</span></h2></div><p class="section-desc">A collection of edits built to capture attention, communicate clearly, and leave a lasting impression.</p></div>
+    <div id="portfolio"></div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="wrap contact-box reveal">
+    <div><div class="kicker">Have a project in mind?</div><h2>Let’s create<br>something great.</h2><p>From short-form content to cinematic storytelling, let’s turn your vision into a polished visual experience.</p><a class="btn primary" href="https://wa.me/923039517534" target="_blank" rel="noopener">Start a WhatsApp Chat ↗</a></div>
+    <div class="contact-links">
+      <a class="contact-link" href="https://wa.me/923039517534" target="_blank" rel="noopener"><span class="ico">↗</span><span><small style="display:block;color:#858d99;margin-bottom:4px">WHATSAPP</small>03039517534</span></a>
+      <a class="contact-link" href="mailto:thinkersgrowth@gmail.com"><span class="ico">✉</span><span><small style="display:block;color:#858d99;margin-bottom:4px">EMAIL</small>thinkersgrowth@gmail.com</span></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footerin"><span>© <span id="year"></span> Thinker Growth</span><span>Deep Think. Grow Daily.</span><a href="#home">Back to top ↑</a></div></footer>
+<script>
+/*
+  ADD YOUR YOUTUBE VIDEO IDs BELOW.
+  Example: "dQw4w9WgXcQ" (the part after v= in a YouTube URL).
+  For Unlisted videos, use the video ID; the embed will work if embedding is allowed.
+  Keep client-confidential videos off a public portfolio.
+*/
+const categories = [
+ {name:"Real Estate",ratio:"916",count:6,layout:"pair",items:["Property Edit 01","Property Edit 02","Property Edit 03","Property Edit 04","Property Edit 05","Property Edit 06"]},
+ {name:"Ads",ratio:"169",count:1,layout:"single",items:["Commercial Ad"]},
+ {name:"UGC",ratio:"916",count:1,layout:"single",items:["UGC Video"]},
+ {name:"Motion Graphics",ratio:"916",count:4,layout:"pair",items:["Motion Design 01","Motion Design 02","Motion Design 03","Motion Design 04"]},
+ {name:"Documentaries",ratio:"169",count:5,layout:"doc",items:["Documentary 01","Documentary 02","Documentary 03","Documentary 04","Documentary 05"]},
+ {name:"Talking Head",ratio:"916",count:4,layout:"pair",items:["Talking Head 01","Talking Head 02","Talking Head 03","Talking Head 04"]},
+ {name:"2D Animation",ratio:"916",count:4,layout:"pair",items:["2D Animation 01","2D Animation 02","2D Animation 03","2D Animation 04"]},
+ {name:"Islamic",ratio:"169",count:1,layout:"single",items:["Islamic Video"]},
+ {name:"AI Videos",ratio:"916",count:4,layout:"pair",items:["AI Video 01","AI Video 02","AI Video 03","AI Video 04"]},
+ {name:"Quotes",ratio:"916",count:4,layout:"pair",items:["Quote Video 01","Quote Video 02","Quote Video 03","Quote Video 04"]}
+];
+// Add IDs in order, or leave "" to show polished placeholders.
+// Example: videoIds["Real Estate"] = ["YOUTUBE_ID_1","YOUTUBE_ID_2", ...]
+
+const videoIds = {
+  "Real Estate": [],
+  "Ads": ["iHE-xYLaMLs"],
+  "UGC": [],
+  "Motion Graphics": [],
+  "Documentaries": [
+    "DzGw3Dw7aac",
+    "HFykhsg3NOQ",
+    "wuGEclYiH6Q",
+    "lsLQKoSb4WE"
+  ],
+  "Talking Head": [],
+  "2D Animation": [],
+  "Islamic": [],
+  "AI Videos": [],
+  "Quotes": []
+};const root=document.getElementById("portfolio");
+function esc(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function card(cat,index){
+ const title=cat.items[index],id=(videoIds[cat.name]||[])[index]||"";
+ const ratio=cat.ratio==="916"?"ratio-916":"ratio-169";
+ const media=id
+  ? `<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?rel=0" title="${esc(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+  : `<div class="placeholder"><div class="play" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path d="M5 3.8c0-.8.9-1.3 1.6-.8l9.2 5.7a1.5 1.5 0 0 1 0 2.6l-9.2 5.7c-.7.5-1.6 0-1.6-.8V3.8Z"/></svg></div><b>${esc(cat.name.toUpperCase())}</b><small>ADD YOUR VIDEO ID TO DISPLAY</small></div>`;
+ return `<article class="video-card"><div class="media ${ratio}">${media}</div><div class="card-info"><strong>${esc(title)}</strong><span>${cat.ratio==="916"?"VERTICAL · 9:16":"LANDSCAPE · 16:9"}</span></div></article>`;
+}
+function section(cat,i){
+ const id="cat-"+i;
+ if(cat.layout==="pair"){
+  return `<section class="category reveal" aria-label="${esc(cat.name)}"><div class="cat-head"><div class="cat-title"><h3>${esc(cat.name)}</h3><span class="cat-num">${String(i+1).padStart(2,"0")}</span></div><div class="cat-controls"><span class="cat-meta">9:16 · Selected work</span><button class="arrow" data-prev="${id}" aria-label="Previous videos" disabled>←</button><button class="arrow" data-next="${id}" aria-label="Next videos" ${cat.count<=2?"disabled":""}>→</button></div></div><div class="video-grid" id="${id}" data-cat="${i}" data-page="0"></div></section>`;
+ }
+ if(cat.layout==="doc"){
+  return `<section class="category reveal" aria-label="Documentaries"><div class="cat-head"><div class="cat-title"><h3>Documentaries</h3><span class="cat-num">${String(i+1).padStart(2,"0")}</span></div><span class="cat-meta">16:9 · 5 films</span></div><div class="doc-layout"><div class="video-grid single" id="${id}" data-cat="${i}" data-page="0"></div><div class="doc-side"><button class="arrow" data-prev="${id}" aria-label="Previous documentary" disabled>←</button><div class="dots" id="${id}-dots"></div><button class="arrow" data-next="${id}" aria-label="Next documentary">→</button></div></div></section>`;
+ }
+ return `<section class="category reveal" aria-label="${esc(cat.name)}"><div class="cat-head"><div class="cat-title"><h3>${esc(cat.name)}</h3><span class="cat-num">${String(i+1).padStart(2,"0")}</span></div><span class="cat-meta">${cat.ratio==="916"?"9:16":"16:9"} · Featured</span></div><div class="video-grid single">${card(cat,0)}</div></section>`;
+}
+root.innerHTML=categories.map(section).join("");
+function render(el){
+ const cat=categories[+el.dataset.cat],page=+el.dataset.page;
+ const per=cat.layout==="doc"?1:2,start=page*per;
+ el.innerHTML=Array.from({length:Math.min(per,cat.count-start)},(_,n)=>card(cat,start+n)).join("");
+ const prev=document.querySelector(`[data-prev="${el.id}"]`),next=document.querySelector(`[data-next="${el.id}"]`);
+ if(prev)prev.disabled=page===0;
+ if(next)next.disabled=start+per>=cat.count;
+ const dots=document.getElementById(el.id+"-dots");
+ if(dots){dots.innerHTML=cat.items.map((_,n)=>`<span class="dot ${n===page?"active":""}"></span>`).join("");}
+}
+document.querySelectorAll(".video-grid[data-cat]").forEach(render);
+document.addEventListener("click",e=>{
+ const b=e.target.closest("button[data-next],button[data-prev]");if(!b)return;
+ const el=document.getElementById(b.dataset.next||b.dataset.prev);if(!el)return;
+ const cat=categories[+el.dataset.cat],per=cat.layout==="doc"?1:2;
+ let page=+el.dataset.page+(b.dataset.next?1:-1);
+ page=Math.max(0,Math.min(Math.ceil(cat.count/per)-1,page));
+ el.dataset.page=page;render(el);
+});
+document.getElementById("year").textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
